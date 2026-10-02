@@ -1,0 +1,27 @@
+2026-09-22 18:05:40.286 -03 [6820] LOG:  starting PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit
+2026-09-22 18:05:40.297 -03 [6820] LOG:  could not bind IPv6 address "::1": Permission denied
+2026-09-22 18:05:40.297 -03 [6820] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2026-09-22 18:05:40.297 -03 [6820] WARNING:  could not create listen socket for "localhost"
+2026-09-22 18:05:40.297 -03 [6820] FATAL:  could not create any TCP/IP sockets
+2026-09-22 18:05:40.302 -03 [6820] LOG:  database system is shut down
+2026-09-22 18:15:25.011 -03 [3968] LOG:  starting PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit
+2026-09-22 18:15:25.017 -03 [3968] LOG:  listening on IPv6 address "::1", port 5432
+2026-09-22 18:15:25.018 -03 [3968] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-09-22 18:15:25.243 -03 [248] LOG:  database system was interrupted; last known up at 2026-09-20 22:36:14 -03
+2026-09-22 18:15:35.143 -03 [248] LOG:  could not open file "./startup.log": sharing violation
+2026-09-22 18:15:35.143 -03 [248] DETAIL:  Continuing to retry for 30 seconds.
+2026-09-22 18:15:35.143 -03 [248] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-09-22 18:16:01.221 -03 [248] LOG:  syncing data directory (fsync), elapsed time: 35.97 s, current path: .
+2026-09-22 18:16:01.581 -03 [248] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-09-22 18:16:01.590 -03 [248] LOG:  redo starts at 0/1CEC880
+2026-09-22 18:16:01.590 -03 [248] LOG:  invalid record length at 0/1CEC9C0: expected at least 24, got 0
+2026-09-22 18:16:01.590 -03 [248] LOG:  redo done at 0/1CEC988 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-09-22 18:16:01.616 -03 [1944] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-09-22 18:16:01.647 -03 [1944] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.002 s, total=0.033 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1CEC9C0, redo lsn=0/1CEC9C0
+2026-09-22 18:16:01.666 -03 [3968] LOG:  database system is ready to accept connections
+2026-09-22 18:18:01.342 -03 [7680] ERROR:  syntax error at or near "SELECT" at character 4
+2026-09-22 18:18:01.342 -03 [7680] STATEMENT:  DO SELECT current_user, current_database(); SELECT usename FROM pg_user WHERE usename='neopetcare'; BEGIN IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = 'neopetcare') THEN CREATE ROLE neopetcare LOGIN PASSWORD 'neopetcare-local-235689'; ELSE ALTER ROLE neopetcare WITH LOGIN PASSWORD 'neopetcare-local-235689'; END IF; END SELECT current_user, current_database(); SELECT usename FROM pg_user WHERE usename='neopetcare';; SELECT 'ROLE_OK';
+2026-09-22 18:21:01.648 -03 [1944] LOG:  checkpoint starting: time
+2026-09-22 18:21:04.115 -03 [1944] LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.206 s, sync=0.005 s, total=2.467 s; sync files=1, longest=0.005 s, average=0.005 s; distance=15 kB, estimate=15 kB; lsn=0/1CF0790, redo lsn=0/1CF0700
+2026-09-22 18:41:01.141 -03 [1944] LOG:  checkpoint starting: time
+2026-09-22 18:41:03.615 -03 [1944] LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.224 s, sync=0.004 s, total=2.475 s; sync files=2, longest=0.003 s, average=0.002 s; distance=8 kB, estimate=14 kB; lsn=0/1CF2AC0, redo lsn=0/1CF2A30

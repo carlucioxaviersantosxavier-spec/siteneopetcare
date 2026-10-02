@@ -1,0 +1,161 @@
+2026-09-20 22:26:47.311 -03 [11784] LOG:  starting PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit
+2026-09-20 22:26:47.318 -03 [11784] LOG:  could not bind IPv6 address "::1": Permission denied
+2026-09-20 22:26:47.319 -03 [11784] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2026-09-20 22:26:47.319 -03 [11784] WARNING:  could not create listen socket for "localhost"
+2026-09-20 22:26:47.319 -03 [11784] FATAL:  could not create any TCP/IP sockets
+2026-09-20 22:26:47.324 -03 [11784] LOG:  database system is shut down
+2026-09-20 22:29:20.813 -03 [6380] LOG:  starting PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit
+2026-09-20 22:29:20.820 -03 [6380] LOG:  listening on IPv6 address "::1", port 5432
+2026-09-20 22:29:20.821 -03 [6380] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-09-20 22:29:21.158 -03 [10252] LOG:  database system was shut down at 2026-09-20 22:26:42 -03
+2026-09-20 22:29:21.190 -03 [6380] LOG:  database system is ready to accept connections
+2026-09-20 22:29:21.518 -03 [4156] FATAL:  role "Administrador" does not exist
+2026-09-20 22:29:21.754 -03 [6328] ERROR:  syntax error at or near "$" at character 4
+2026-09-20 22:29:21.754 -03 [6328] STATEMENT:  DO $ BEGIN IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = 'neopetcare') THEN CREATE ROLE neopetcare LOGIN PASSWORD 'neopetcare-local-2026'; ELSE ALTER ROLE neopetcare WITH LOGIN PASSWORD 'neopetcare-local-2026'; END IF; END $;
+2026-09-20 22:31:56.584 -03 [8592] LOG:  could not receive data from client: unrecognized winsock error 10054
+2026-09-20 22:33:09.608 -03 [1760] FATAL:  role "Administrador" does not exist
+2026-09-20 22:34:06.830 -03 [5772] FATAL:  role "Administrador" does not exist
+2026-09-20 22:34:21.105 -03 [8860] LOG:  checkpoint starting: time
+2026-09-20 22:36:15.431 -03 [8860] LOG:  checkpoint complete: wrote 1056 buffers (6.4%), wrote 3 SLRU buffers; 1 WAL file(s) added, 0 removed, 0 recycled; write=113.161 s, sync=0.245 s, total=114.327 s; sync files=340, longest=0.010 s, average=0.001 s; distance=5093 kB, estimate=5093 kB; lsn=0/1CEC910, redo lsn=0/1CEC880
+2026-10-01 18:24:05.369 -03 [16088] LOG:  starting PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit
+2026-10-01 18:24:05.378 -03 [16088] LOG:  listening on IPv6 address "::1", port 5435
+2026-10-01 18:24:05.379 -03 [16088] LOG:  listening on IPv4 address "127.0.0.1", port 5435
+2026-10-01 18:24:05.545 -03 [14712] LOG:  database system was interrupted; last known up at 2026-09-22 18:41:03 -03
+2026-10-01 18:24:10.015 -03 [14712] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-01 18:24:10.044 -03 [14712] LOG:  redo starts at 0/1CF2A30
+2026-10-01 18:24:10.045 -03 [14712] LOG:  invalid record length at 0/1CF2B70: expected at least 24, got 0
+2026-10-01 18:24:10.045 -03 [14712] LOG:  redo done at 0/1CF2B38 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-01 18:24:10.084 -03 [2404] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-01 18:24:10.130 -03 [2404] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.021 s, sync=0.002 s, total=0.048 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1CF2B70, redo lsn=0/1CF2B70
+2026-10-01 18:24:10.148 -03 [16088] LOG:  database system is ready to accept connections
+2026-10-01 18:24:10.247 -03 [20472] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:10.254 -03 [16088] LOG:  background worker "logical replication launcher" (PID 20472) exited with exit code 1
+2026-10-01 18:24:15.299 -03 [12768] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:15.307 -03 [16088] LOG:  background worker "logical replication launcher" (PID 12768) exited with exit code 1
+2026-10-01 18:24:20.399 -03 [9332] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:20.411 -03 [16088] LOG:  background worker "logical replication launcher" (PID 9332) exited with exit code 1
+2026-10-01 18:24:25.460 -03 [11232] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:25.466 -03 [16088] LOG:  background worker "logical replication launcher" (PID 11232) exited with exit code 1
+2026-10-01 18:24:30.616 -03 [18116] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:30.625 -03 [16088] LOG:  background worker "logical replication launcher" (PID 18116) exited with exit code 1
+2026-10-01 18:24:35.697 -03 [7848] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:35.705 -03 [16088] LOG:  background worker "logical replication launcher" (PID 7848) exited with exit code 1
+2026-10-01 18:24:40.876 -03 [20228] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:40.885 -03 [16088] LOG:  background worker "logical replication launcher" (PID 20228) exited with exit code 1
+2026-10-01 18:24:46.066 -03 [3832] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:46.074 -03 [16088] LOG:  background worker "logical replication launcher" (PID 3832) exited with exit code 1
+2026-10-01 18:24:51.155 -03 [20624] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:51.162 -03 [16088] LOG:  background worker "logical replication launcher" (PID 20624) exited with exit code 1
+2026-10-01 18:24:56.209 -03 [20024] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:24:56.217 -03 [16088] LOG:  background worker "logical replication launcher" (PID 20024) exited with exit code 1
+2026-10-01 18:25:01.305 -03 [13504] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:01.324 -03 [16088] LOG:  background worker "logical replication launcher" (PID 13504) exited with exit code 1
+2026-10-01 18:25:06.419 -03 [18384] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:06.427 -03 [16088] LOG:  background worker "logical replication launcher" (PID 18384) exited with exit code 1
+2026-10-01 18:25:11.493 -03 [18760] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:11.505 -03 [16088] LOG:  background worker "logical replication launcher" (PID 18760) exited with exit code 1
+2026-10-01 18:25:16.553 -03 [19772] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:16.561 -03 [16088] LOG:  background worker "logical replication launcher" (PID 19772) exited with exit code 1
+2026-10-01 18:25:21.617 -03 [12028] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:21.625 -03 [16088] LOG:  background worker "logical replication launcher" (PID 12028) exited with exit code 1
+2026-10-01 18:25:26.775 -03 [10296] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:26.785 -03 [16088] LOG:  background worker "logical replication launcher" (PID 10296) exited with exit code 1
+2026-10-01 18:25:31.838 -03 [14036] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:31.846 -03 [16088] LOG:  background worker "logical replication launcher" (PID 14036) exited with exit code 1
+2026-10-01 18:25:36.892 -03 [15076] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:36.902 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15076) exited with exit code 1
+2026-10-01 18:25:42.049 -03 [15756] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:42.057 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15756) exited with exit code 1
+2026-10-01 18:25:47.207 -03 [16708] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:47.215 -03 [16088] LOG:  background worker "logical replication launcher" (PID 16708) exited with exit code 1
+2026-10-01 18:25:52.257 -03 [8000] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:52.265 -03 [16088] LOG:  background worker "logical replication launcher" (PID 8000) exited with exit code 1
+2026-10-01 18:25:57.413 -03 [20132] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:25:57.421 -03 [16088] LOG:  background worker "logical replication launcher" (PID 20132) exited with exit code 1
+2026-10-01 18:26:02.555 -03 [2272] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:02.563 -03 [16088] LOG:  background worker "logical replication launcher" (PID 2272) exited with exit code 1
+2026-10-01 18:26:07.705 -03 [15648] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:07.714 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15648) exited with exit code 1
+2026-10-01 18:26:12.748 -03 [8352] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:12.757 -03 [16088] LOG:  background worker "logical replication launcher" (PID 8352) exited with exit code 1
+2026-10-01 18:26:17.805 -03 [11300] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:17.893 -03 [16088] LOG:  background worker "logical replication launcher" (PID 11300) exited with exit code 1
+2026-10-01 18:26:22.933 -03 [13240] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:22.941 -03 [16088] LOG:  background worker "logical replication launcher" (PID 13240) exited with exit code 1
+2026-10-01 18:26:27.997 -03 [18132] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:28.004 -03 [16088] LOG:  background worker "logical replication launcher" (PID 18132) exited with exit code 1
+2026-10-01 18:26:33.051 -03 [17288] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:33.061 -03 [16088] LOG:  background worker "logical replication launcher" (PID 17288) exited with exit code 1
+2026-10-01 18:26:38.106 -03 [13012] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:38.113 -03 [16088] LOG:  background worker "logical replication launcher" (PID 13012) exited with exit code 1
+2026-10-01 18:26:43.175 -03 [15732] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:43.185 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15732) exited with exit code 1
+2026-10-01 18:26:48.272 -03 [2320] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:48.280 -03 [16088] LOG:  background worker "logical replication launcher" (PID 2320) exited with exit code 1
+2026-10-01 18:26:53.325 -03 [15412] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:53.333 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15412) exited with exit code 1
+2026-10-01 18:26:58.389 -03 [19272] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:26:58.400 -03 [16088] LOG:  background worker "logical replication launcher" (PID 19272) exited with exit code 1
+2026-10-01 18:27:03.563 -03 [14628] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:03.575 -03 [16088] LOG:  background worker "logical replication launcher" (PID 14628) exited with exit code 1
+2026-10-01 18:27:08.628 -03 [18380] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:08.637 -03 [16088] LOG:  background worker "logical replication launcher" (PID 18380) exited with exit code 1
+2026-10-01 18:27:13.697 -03 [16856] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:13.706 -03 [16088] LOG:  background worker "logical replication launcher" (PID 16856) exited with exit code 1
+2026-10-01 18:27:18.762 -03 [9060] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:18.768 -03 [16088] LOG:  background worker "logical replication launcher" (PID 9060) exited with exit code 1
+2026-10-01 18:27:23.809 -03 [17368] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:23.818 -03 [16088] LOG:  background worker "logical replication launcher" (PID 17368) exited with exit code 1
+2026-10-01 18:27:28.878 -03 [7724] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:28.888 -03 [16088] LOG:  background worker "logical replication launcher" (PID 7724) exited with exit code 1
+2026-10-01 18:27:33.941 -03 [8728] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:33.949 -03 [16088] LOG:  background worker "logical replication launcher" (PID 8728) exited with exit code 1
+2026-10-01 18:27:39.105 -03 [20432] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:39.114 -03 [16088] LOG:  background worker "logical replication launcher" (PID 20432) exited with exit code 1
+2026-10-01 18:27:44.163 -03 [17664] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:44.170 -03 [16088] LOG:  background worker "logical replication launcher" (PID 17664) exited with exit code 1
+2026-10-01 18:27:49.230 -03 [20776] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:49.239 -03 [16088] LOG:  background worker "logical replication launcher" (PID 20776) exited with exit code 1
+2026-10-01 18:27:54.380 -03 [10016] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:54.388 -03 [16088] LOG:  background worker "logical replication launcher" (PID 10016) exited with exit code 1
+2026-10-01 18:27:59.442 -03 [19524] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:27:59.501 -03 [16088] LOG:  background worker "logical replication launcher" (PID 19524) exited with exit code 1
+2026-10-01 18:28:04.541 -03 [10692] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:04.549 -03 [16088] LOG:  background worker "logical replication launcher" (PID 10692) exited with exit code 1
+2026-10-01 18:28:09.582 -03 [5236] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:09.590 -03 [16088] LOG:  background worker "logical replication launcher" (PID 5236) exited with exit code 1
+2026-10-01 18:28:14.632 -03 [14912] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:14.641 -03 [16088] LOG:  background worker "logical replication launcher" (PID 14912) exited with exit code 1
+2026-10-01 18:28:19.685 -03 [6868] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:19.695 -03 [16088] LOG:  background worker "logical replication launcher" (PID 6868) exited with exit code 1
+2026-10-01 18:28:24.739 -03 [15912] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:24.747 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15912) exited with exit code 1
+2026-10-01 18:28:29.788 -03 [13196] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:29.796 -03 [16088] LOG:  background worker "logical replication launcher" (PID 13196) exited with exit code 1
+2026-10-01 18:28:34.940 -03 [16248] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:34.948 -03 [16088] LOG:  background worker "logical replication launcher" (PID 16248) exited with exit code 1
+2026-10-01 18:28:39.988 -03 [14056] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:39.996 -03 [16088] LOG:  background worker "logical replication launcher" (PID 14056) exited with exit code 1
+2026-10-01 18:28:45.045 -03 [15616] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:45.054 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15616) exited with exit code 1
+2026-10-01 18:28:50.100 -03 [12040] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:50.110 -03 [16088] LOG:  background worker "logical replication launcher" (PID 12040) exited with exit code 1
+2026-10-01 18:28:55.156 -03 [15656] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:28:55.165 -03 [16088] LOG:  background worker "logical replication launcher" (PID 15656) exited with exit code 1
+2026-10-01 18:29:00.211 -03 [17940] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:29:00.220 -03 [16088] LOG:  background worker "logical replication launcher" (PID 17940) exited with exit code 1
+2026-10-01 18:29:05.269 -03 [11116] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:29:05.277 -03 [16088] LOG:  background worker "logical replication launcher" (PID 11116) exited with exit code 1
+2026-10-01 18:29:10.151 -03 [2404] LOG:  checkpoint starting: time
+2026-10-01 18:29:10.369 -03 [16856] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:29:10.458 -03 [16088] LOG:  background worker "logical replication launcher" (PID 16856) exited with exit code 1
+2026-10-01 18:29:15.511 -03 [19828] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:29:15.516 -03 [16088] LOG:  background worker "logical replication launcher" (PID 19828) exited with exit code 1
+2026-10-01 18:29:16.169 -03 [2404] LOG:  checkpoint complete: wrote 51 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=5.949 s, sync=0.055 s, total=6.019 s; sync files=48, longest=0.004 s, average=0.002 s; distance=298 kB, estimate=298 kB; lsn=0/1D3D778, redo lsn=0/1D3D6E8
+2026-10-01 18:29:20.561 -03 [9612] ERROR:  could not open file "global/6100": No such file or directory
+2026-10-01 18:29:20.570 -03 [16088] LOG:  background worker "logical replication launcher" (PID 9612) exited with exit code 1
+2026-10-01 18:29:21.340 -03 [16088] LOG:  WAL writer process (PID 17228) was terminated by exception 0xC000013A
+2026-10-01 18:29:21.340 -03 [16088] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-01 18:29:21.340 -03 [16088] LOG:  terminating any other active server processes
+2026-10-01 18:29:21.413 -03 [16088] LOG:  received fast shutdown request
+^C
